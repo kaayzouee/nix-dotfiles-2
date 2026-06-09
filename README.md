@@ -1,3 +1,6 @@
+# THIS REPO IS ARCHIVED BECAUSE I DO NOT USE NIX ANYMORE
+## If you are interested in maintaining this project, feel free to fork it.
+
 # NixOS Dotfiles
 - **Maintainer / Contributor**: KaayZouee.
 
