@@ -1,19 +1,14 @@
-# THIS REPO IS ARCHIVED BECAUSE I DO NOT USE NIX ANYMORE
-## If you are interested in maintaining this project, feel free to fork it.
-
 # NixOS Dotfiles
 - **Maintainer / Contributor**: KaayZouee.
 
 ## Updates:
-- Removed hardware.configuration.nix
-- Minor debloat + network / virtualization tweak and many more
+- Update to 26.06 nix
+- Rework files that doesn't work
+- Additionally, I also changed the hostname to nixos
+- Up-to-date pkg names
 
-> Notes:  From now on, minor changes to README.md won’t be tracked in the Updates section.
-
-### ✅ Portable (can be reused anywhere):
-- `flake.nix` → Main flake configuration (system + modules + packages).
-- `configuration.nix` → Base system configuration (users, services, desktop, etc.).
-
-These are safe to share and can be reused on other machines (with minor adjustments).
-
-> Note: I'm planning to move from classic configuration.nix to flake.nix, not sure if that's a good choice or not. Only small updates from now on.
+## Features
+- Flake
+- Modules
+- Host
+- .gitignore for hardware-config file

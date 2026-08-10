@@ -2,6 +2,7 @@
   networking.networkmanager.enable = true;
   networking.networkmanager.dns = "none";
 
+  networking.resolvconf.enable = false;
   services.resolved.enable = false;
 
   environment.etc."resolv.conf".text = ''

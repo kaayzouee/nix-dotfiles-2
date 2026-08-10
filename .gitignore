@@ -1,11 +1,2 @@
-# Vim/Neovim swap files
-*.swp
-*.swo
-*.swx
-
-# Backup files
-*~
-
-# OS metadata
-.DS_Store
-Thumbs.db
+hardware-configuration.nix
+configuration.nix

@@ -1,4 +1,4 @@
 { pkgs }:
 [
-pkgs.protonvpn-gui
+pkgs.proton-vpn
 ]
