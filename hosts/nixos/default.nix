@@ -42,7 +42,7 @@ in
 
   time.timeZone = "Asia/Bangkok";
 
-  system.stateVersion = "25.11";
+  system.stateVersion = "26.06";
 
 environment.systemPackages =
      PKG_prolangs
