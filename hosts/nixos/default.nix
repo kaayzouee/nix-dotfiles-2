@@ -2,16 +2,16 @@
 
 let
   # Import package lists (simple lists, not NixOS modules)
-  PKG_prolangs         = import ../../modules/PKG-prolangs.nix        { inherit pkgs; };
-  PKG_editors          = import ../../modules/PKG-editors.nix         { inherit pkgs; };
-  PKG_UtilitiesCLI     = import ../../modules/PKG-UtilitiesCLItools.nix { inherit pkgs; };
-  PKG_systemnetworking = import ../../modules/PKG-systemnetworking.nix { inherit pkgs; };
-  PKG_vpn              = import ../../modules/PKG-vpn.nix             { inherit pkgs; };
-  PKG_multimedia       = import ../../modules/PKG-multimedia.nix      { inherit pkgs; };
-  PKG_WMnoti           = import ../../modules/PKG-WMnoti.nix          { inherit pkgs; };
-  PKG_themes          = import ../../modules/PKG-themes.nix          { inherit pkgs; };
-  PKG_VM              = import ../../modules/PKG-VM.nix              { inherit pkgs; };
-  PKG_ricing          = import ../../modules/PKG-forricing.nix       { inherit pkgs; };
+  PKG_prolangs         = import ../../packages/PKG-prolangs.nix        { inherit pkgs; };
+  PKG_editors          = import ../../packages/PKG-editors.nix         { inherit pkgs; };
+  PKG_UtilitiesCLI     = import ../../packages/PKG-UtilitiesCLItools.nix { inherit pkgs; };
+  PKG_systemnetworking = import ../../packages/PKG-systemnetworking.nix { inherit pkgs; };
+  PKG_vpn              = import ../../packages/PKG-vpn.nix             { inherit pkgs; };
+  PKG_multimedia       = import ../../packages/PKG-multimedia.nix      { inherit pkgs; };
+  PKG_WMnoti           = import ../../packages/PKG-WMnoti.nix          { inherit pkgs; };
+  PKG_themes          = import ../../packages/PKG-themes.nix          { inherit pkgs; };
+  PKG_VM              = import ../../packages/PKG-VM.nix              { inherit pkgs; };
+  PKG_ricing          = import ../../packages/PKG-forricing.nix       { inherit pkgs; };
 in
 {
   imports = [
@@ -19,6 +19,7 @@ in
 
     ../../modules/boot.nix
     ../../modules/bluetooth.nix
+    ../../modules/mice.nix
     ../../modules/desktop-xfce.nix
     ../../modules/fonts.nix
     ../../modules/inputmethod.nix
@@ -42,7 +43,7 @@ in
 
   time.timeZone = "Asia/Bangkok";
 
-  system.stateVersion = "26.06";
+  system.stateVersion = "26.05";
 
 environment.systemPackages =
      PKG_prolangs
@@ -57,4 +58,3 @@ environment.systemPackages =
   ++ PKG_ricing;
 
 }
-
