@@ -9,6 +9,14 @@
     accent = "mauve";
   };
 
+  imports = [
+    ../../modules/theming/cursor.nix
+    ../../modules/programs/tmux.nix
+  ];
+  
+  home.username = "kay";
+  home.homeDirectory = "/home/kay";
+
   catppuccin.xfce4-terminal.enable = true;
 
   programs.home-manager.enable = true;

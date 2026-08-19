@@ -16,17 +16,20 @@ in
   imports = [
     ../../hardware-configuration.nix
 
-    ../../modules/boot.nix
-    ../../modules/bluetooth.nix
-    ../../modules/mice.nix
-    ../../modules/desktop-xfce.nix
-    ../../modules/fonts.nix
-    ../../modules/inputmethod.nix
-    ../../modules/networking.nix
-    ../../modules/sound.nix
-    ../../modules/users.nix
-    ../../modules/virtualization.nix
-    ../../modules/editors.nix
+    ../../modules/desktop/desktop-xfce.nix
+
+    ../../modules/hardware/fonts.nix
+    ../../modules/hardware/inputmethod.nix
+    ../../modules/hardware/mice.nix
+
+    ../../modules/system/networking.nix
+    ../../modules/system/boot.nix
+    ../../modules/system/sound.nix
+    ../../modules/system/users.nix
+    ../../modules/system/virtualization.nix
+    ../../modules/system/bluetooth.nix
+
+    ../../modules/programs/vscode.nix
   ];
 
   networking.hostName = "nixos";
