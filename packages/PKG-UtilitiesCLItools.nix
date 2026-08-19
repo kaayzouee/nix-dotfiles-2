@@ -11,4 +11,11 @@
     pkgs.jq
     pkgs.unzip
     pkgs.ast-grep
+    pkgs.gh
+    pkgs.btop
+    pkgs.tmux
+    pkgs.lsd
+    pkgs.zellij
+    pkgs.bottom
+    pkgs.broot
 ]
