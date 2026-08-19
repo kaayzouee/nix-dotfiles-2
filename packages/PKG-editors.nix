@@ -2,5 +2,5 @@
 [
   pkgs.neovim
   pkgs.vim-full
-  pkgs.vscodium
+  pkgs.vscode
 ]
