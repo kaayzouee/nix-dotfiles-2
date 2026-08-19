@@ -13,4 +13,11 @@
 	"libvirtd" 
     ];
   };
+
+  users.users.guest = {
+    isNormalUser = true;
+    description = "Friend Guest";
+    hashedPassword = "";
+  };
+
 }

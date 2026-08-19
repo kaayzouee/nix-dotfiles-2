@@ -17,6 +17,8 @@
     desktopManager.xfce.enable = true;
     xkb.layout = "us";
   };
+  
+  security.pam.services.lightdm.allowNullPassword = true;  
 
   programs.firefox.enable = true;
 }
