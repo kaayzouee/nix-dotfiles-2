@@ -5,4 +5,5 @@
     pkgs.cava
     pkgs.spotify
     pkgs.pdf4qt
+    pkgs.vesktop
 ]
