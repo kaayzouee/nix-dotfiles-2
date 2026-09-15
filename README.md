@@ -11,4 +11,9 @@
 - Home manager
 - Modules
 - Host
-- .gitignore for hardware-config file
+- .gitignore for hardware + nix config file
+
+## To build
+- Put all of its content to /etc/nixos
+- Run this command:
+`sudo nixos-rebuild switch --flake path:/etc/nixos#nixos`
