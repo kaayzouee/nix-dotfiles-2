@@ -21,14 +21,9 @@
 - .gitignore for hardware + nix config file
 
 ## To build
-Normal users:
 ```bash
 git clone https://github.com/kaayzouee/nix-dotfiles-2.git /tmp/nix-dotfiles-2
 rm -rf /tmp/nix-dotfiles-2/.git
 sudo cp -a /tmp/nix-dotfiles-2/. /etc/nixos/
-sudo nixos-rebuild switch --flake path:/etc/nixos#nixos
-```
-To future me, if .git is present, please run this instead:
-```bash
-sudo nixos-rebuild switch --flake path:/etc/nixos#nixos
+sudo nixos-rebuild switch --flake /etc/nixos#nixos
 ```
