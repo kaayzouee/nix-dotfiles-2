@@ -11,14 +11,18 @@
 
   services.flatpak.enable = true;
 
+  environment.xfce.excludePackages = with pkgs; [
+    xdg-desktop-portal-xapp
+  ];
+
   services.xserver = {
     enable = true;
     displayManager.lightdm.enable = true;
     desktopManager.xfce.enable = true;
     xkb.layout = "us";
   };
-  
-  security.pam.services.lightdm.allowNullPassword = true;  
+
+  security.pam.services.lightdm.allowNullPassword = true;
 
   programs.firefox.enable = true;
 }

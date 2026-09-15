@@ -12,6 +12,7 @@
   imports = [
     ../../modules/theming/cursor.nix
     ../../modules/programs/tmux.nix
+    ../../modules/programs/fastfetch.nix
   ];
   
   home.username = "kay";

@@ -11,7 +11,7 @@ let
   PKG_VM               = import ../../packages/PKG-VM.nix                  { inherit pkgs; };
   PKG_ricing           = import ../../packages/PKG-forricing.nix           { inherit pkgs; };
   PKG_keygen           = import ../../packages/PKG-keygen.nix              { inherit pkgs; };
-
+  PKG_cli_shg          = import ../../packages/cli-tools/PKG-CLI-shg.nix   { inherit pkgs; };
 # ------ CLI ------
   PKG_cli_compression          = import ../../packages/cli-tools/PKG-CLI-compression.nix         { inherit pkgs; };
   PKG_cli_file_listing         = import ../../packages/cli-tools/PKG-CLI-file-listing.nix        { inherit pkgs; };
@@ -50,7 +50,15 @@ in
     extraOptions = ''
       experimental-features = nix-command flakes
     '';
-  };
+  
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 14d";
+    };
+
+    settings.auto-optimise-store = true;
+    };
 
   nixpkgs.config.allowUnfree = true;
 
@@ -76,7 +84,7 @@ in
     ++ PKG_themes
     ++ PKG_VM
     ++ PKG_ricing
-    ++ PKG_keygen;
-
+    ++ PKG_keygen
+    ++ PKG_cli_shg;
   system.stateVersion = "26.05";
 }
