@@ -21,4 +21,5 @@
   catppuccin.xfce4-terminal.enable = true;
 
   programs.home-manager.enable = true;
+
 }
